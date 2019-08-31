@@ -1,0 +1,17 @@
+= Erste Schritte mit dem Arduino
+
+== Arduino IDE aufsetzen (praxis)
+
+ - URL geben
+ - USB Stick bereithalten
+
+In die serielle Konsole loggen (praxis)
+
+Board: Nano auf dem Breadboard, angeschlossen an den PC
+
+ - void setup() { Serial.begin(9600); }
+ - void loop() { Serial.write("Hello World!\n"); delay(2000); }
+ - erstes Programm, durchsehen das alles funktioniert
+ - Serielle Konsole weil der Arduino Nano keine LED hat
+ - Grob erklaeren was ein Funktion ist, erwaehnen das es unterschiedliche Datentypen gibt (String, int)
+ - Grob erklaeren was setup() und loop() sind, erwaehnen was void ist

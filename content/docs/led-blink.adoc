@@ -1,0 +1,36 @@
+= Eine LED blinken lassen
+
+== Vorwiederstand und Diode (theorie)
+
+ - Strom fliesst
+ - Anode und Kathode
+ - U = I*R, Dreieck
+ - Strombegrenzung
+
+== LED blinken (praxis)
+
+Board: LED mit Vorwiderstand angeschlossen an den Arduino
+
+ - int ledPin;
+ - void setup() { ledPin = 10; pinMode(ledPin, OUTPUT); }
+ - void loop() { digitalWrite(ledPin, 1); delay(1000); digitalWrite(ledPin, 0); delay(1000); }
+ - Wiederholen was setup() und loop() sind
+ - Erklaeren was wie man einen Pin ansteuert (pinMode & digitalWrite) und was eine Variable ist.
+
+== LED leuchtet bei tastendruck (praxis)
+
+Board: LED mit Vorwiderstand und ein Taster angeschlossen an den Arduino
+
+  - int inputPin = 10; int outputPin = 11;
+  - void setup() { pinMode(inputPin, INPUT); }
+  - void loop() { int active = digitalRead(inputPin); if (active == HIGH) { digitalWrite(outputPin, HIGH)} }
+  - Erklaeren was `if` macht, Vergleichsoperatoren (==, !=)
+
+== Tasten entprellen (theorie & praxis)
+
+Board mit Taster und LED mit Vorwiderstand
+
+  - Warum prellen tasten
+  - Wie entprelle ich tasten mit dem Arduino
+  - erklaeren wie man eine funktion schreibt
+  - val1 = digitalRead(buttonPin); delay(20); val2 = digitalRead(buttonPin); if (val1 == val2) { finalVal = val1; }

@@ -1,0 +1,23 @@
+= Vorbesprechung
+
+== Vorkenntnisse
+
+Prinzipiell brauchst du keine Vorkenntnisse für diesen Kurs.
+
+Was man mitbringen sollte ist, ausreichend Neugierde und Lust am Basteln.
+
+Wir hoffen das wir den Kurs in Zukunft regelmässig veranstalten können.
+
+== Eingesetztes Material
+
+Wir rechnen mit ca. 15 € Kosten fuer Material. Hier ist die Liste aller Teile:
+
+ - Arduino Nano v3
+ - Breadboard Mittel
+ - Jumper wire
+ - Taster
+ - Piezo Buzzer
+ - LED 30mA
+ - Poti 10k Ohm
+ - Servo klein
+ - Widerstand 330 Ohm

@@ -1,0 +1,25 @@
+= Aktuatoren
+
+== Was ist PWM? (theorie)
+
+  - PulsWeiten Modulation
+  - Ersatz fuer echte analoge Ausgabe, schaltet sehr schnell
+  - PWM Faehigkeiten des Arduino
+
+== Piezo Buzzer mit PWM steuern (praxis)
+
+Board: Potentiometer und Buzzer angeschlossen an den Arduino
+
+  - int buzzPin = 10; int analogPin = A3; int val;
+  - void setup() { Serial.begin(9600); pinMode(buzzPin, OUTPUT);}
+  - void loop() { val = analogRead(analogPin); analogWrite(buzzPin, val); }
+
+  - FIXME: taster hinzunehmen und tasten entprellen erklaeren?
+
+== Servo mit PWM steuern (praxis)
+
+Board: Servo, Taster am Arduino
+
+  - Erklaeren was ein Datentyp ist (aehnlich einer Variable + Funktion)
+  - Servo soll bei einem Tastendruck ein stueck drehen und beim naechsten wieder zurueck.
+  - Code muss von den Teilnehmern ausgearbeitet werden
