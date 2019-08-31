@@ -1,0 +1,117 @@
+Elektronik Basteln mit dem Arduino
+
+= Vorkenntnisse
+
+ - keine
+ - Neugierig muessen die Leute sein
+
+= Material
+
+Kosten ca. 15 Eur fuer Material
+
+ - Arduino Nano v3
+ - Breadboard Mittel
+ - Jumper wire
+ - Taster
+ - Piezo Buzzer
+ - LED 30mA
+ - Poti 10k Ohm
+ - Servo klein
+ - Widerstand 330 Ohm
+
+= Erste Schritte mit dem Arduino
+
+== Arduino IDE aufsetzen (praxis)
+
+ - URL geben
+ - USB Stick bereithalten
+
+In die serielle Konsole loggen (praxis)
+
+Board: Nano auf dem Breadboard, angeschlossen an den PC
+
+ - void setup() { Serial.begin(9600); }
+ - void loop() { Serial.write("Hello World!\n"); delay(2000); }
+ - erstes Programm, durchsehen das alles funktioniert
+ - Serielle Konsole weil der Arduino Nano keine LED hat
+ - Grob erklaeren was ein Funktion ist, erwaehnen das es unterschiedliche Datentypen gibt (String, int)
+ - Grob erklaeren was setup() und loop() sind, erwaehnen was void ist
+
+== Vorwiederstand und Diode (theorie)
+
+ - Strom fliesst
+ - Anode und Kathode
+ - U = I*R, Dreieck
+ - Strombegrenzung
+
+== LED blinken (praxis)
+
+Board: LED mit Vorwiderstand angeschlossen an den Arduino
+
+ - int ledPin;
+ - void setup() { ledPin = 10; pinMode(ledPin, OUTPUT); }
+ - void loop() { digitalWrite(ledPin, 1); delay(1000); digitalWrite(ledPin, 0); delay(1000); }
+ - Wiederholen was setup() und loop() sind
+ - Erklaeren was wie man einen Pin ansteuert (pinMode & digitalWrite) und was eine Variable ist.
+
+== LED leuchtet bei tastendruck (praxis)
+
+Board: LED mit Vorwiderstand und ein Taster angeschlossen an den Arduino
+
+  - int inputPin = 10; int outputPin = 11;
+  - void setup() { pinMode(inputPin, INPUT); }
+  - void loop() { int active = digitalRead(inputPin); if (active == HIGH) { digitalWrite(outputPin, HIGH)} }
+  - Erklaeren was `if` macht, Vergleichsoperatoren (==, !=)
+
+= Sensoren & Aktuatoren (resistiv)
+
+== Spannungsteiler (theorie)
+
+  - erklaeren wie ein Spannungsteiler funktioniert
+  - erklaeren das ein Potentiometer ein Spannungsteiler ist
+  - erklaeren wie der Arduino analoge Spannungen auslesen kann
+
+== Potentionmeter auslesen (praxis)
+
+Board: Potentiometer angeschlossen an den Arduino
+
+  - int analogPin = A3; int val = 0;
+  - void setup() { Serial.begin(9600); }
+  - void loop() { val = analogRead(analogPin); Serial.write(val); Serial.write("\n"); delay(1000); }
+
+== Was ist PWM? (theorie)
+
+  - PulsWeiten Modulation
+  - Ersatz fuer echte analoge Ausgabe, schaltet sehr schnell
+  - PWM Faehigkeiten des Arduino
+
+== Piezo Buzzer mit PWM steuern (praxis)
+
+Board: Potentiometer und Buzzer angeschlossen an den Arduino
+
+  - int buzzPin = 10; int analogPin = A3; int val;
+  - void setup() { Serial.begin(9600); pinMode(buzzPin, OUTPUT);}
+  - void loop() { val = analogRead(analogPin); analogWrite(buzzPin, val); }
+
+  - FIXME: taster hinzunehmen und tasten entprellen erklaeren?
+
+== Tasten entprellen (theorie & praxis)
+
+Board mit Taster und LED mit Vorwiderstand
+
+  - Warum prellen tasten
+  - Wie entprelle ich tasten mit dem Arduino
+  - erklaeren wie man eine funktion schreibt
+  - val1 = digitalRead(buttonPin); delay(20); val2 = digitalRead(buttonPin); if (val1 == val2) { finalVal = val1; }
+
+== Servo mit PWM steuern (praxis)
+
+Board: Servo, Taster am Arduino
+
+  - Erklaeren was ein Datentyp ist (aehnlich einer Variable + Funktion)
+  - Servo soll bei einem Tastendruck ein stueck drehen und beim naechsten wieder zurueck.
+  - Code muss von den Teilnehmern ausgearbeitet werden
+
+= TODO
+
+  - mehr serielle kommunikation? lesen von werten ueber seriell?
