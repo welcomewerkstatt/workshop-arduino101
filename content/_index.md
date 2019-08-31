@@ -5,4 +5,4 @@ type: docs
 
 Wilkommen beim Welcome Werkstatt Arduino Workshop!
 
-![Arduino, Breadboard und Servo](/static/img/arduino-cover.png "Arduino Uno mit Zubehör")
+![Arduino, Breadboard und Servo](/img/arduino-cover.png "Arduino Uno mit Zubehör")
