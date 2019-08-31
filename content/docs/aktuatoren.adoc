@@ -10,9 +10,22 @@
 
 Board: Potentiometer und Buzzer angeschlossen an den Arduino
 
-  - int buzzPin = 10; int analogPin = A3; int val;
-  - void setup() { Serial.begin(9600); pinMode(buzzPin, OUTPUT);}
-  - void loop() { val = analogRead(analogPin); analogWrite(buzzPin, val); }
+[source,cplusplus,linenums]
+----
+int buzzPin = 10;
+int analogPin = A3;
+int val;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(buzzPin, OUTPUT);
+}
+
+void loop() {
+  val = analogRead(analogPin);
+  analogWrite(buzzPin, val);
+}
+----
 
   - FIXME: taster hinzunehmen und tasten entprellen erklaeren?
 

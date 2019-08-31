@@ -10,6 +10,21 @@
 
 Board: Potentiometer angeschlossen an den Arduino
 
-  - int analogPin = A3; int val = 0;
-  - void setup() { Serial.begin(9600); }
-  - void loop() { val = analogRead(analogPin); Serial.write(val); Serial.write("\n"); delay(1000); }
+image::/img/poti_bb.png[Breadboard mit Poti]
+
+[source,cplusplus,linenums]
+----
+int analogPin = A3;
+int val = 0;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  val = analogRead(analogPin);
+  Serial.write(val);
+  Serial.write("\n");
+  delay(1000);
+}
+----
