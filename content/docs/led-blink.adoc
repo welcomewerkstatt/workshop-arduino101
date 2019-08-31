@@ -11,6 +11,8 @@
 
 Board: LED mit Vorwiderstand angeschlossen an den Arduino
 
+image::/img/led-vorwiderstand_bb.png[Breadboard, LED und Vorwiderstand]
+
  - int ledPin;
  - void setup() { ledPin = 10; pinMode(ledPin, OUTPUT); }
  - void loop() { digitalWrite(ledPin, 1); delay(1000); digitalWrite(ledPin, 0); delay(1000); }
@@ -20,6 +22,8 @@ Board: LED mit Vorwiderstand angeschlossen an den Arduino
 == LED leuchtet bei tastendruck (praxis)
 
 Board: LED mit Vorwiderstand und ein Taster angeschlossen an den Arduino
+
+image::/img/led-vorwiderstand-taster_bb.png[Breadboard, LED mit Vorwiderstand und Taster]
 
   - int inputPin = 10; int outputPin = 11;
   - void setup() { pinMode(inputPin, INPUT); }
