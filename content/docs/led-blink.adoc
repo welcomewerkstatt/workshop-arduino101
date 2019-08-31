@@ -1,4 +1,5 @@
 = Eine LED blinken lassen
+:source-highlighter: coderay
 
 == Vorwiederstand und Diode (theorie)
 
@@ -13,9 +14,23 @@ Board: LED mit Vorwiderstand angeschlossen an den Arduino
 
 image::/img/led-vorwiderstand_bb.png[Breadboard, LED und Vorwiderstand]
 
- - int ledPin;
- - void setup() { ledPin = 10; pinMode(ledPin, OUTPUT); }
- - void loop() { digitalWrite(ledPin, 1); delay(1000); digitalWrite(ledPin, 0); delay(1000); }
+[source,cplusplus,linenums]
+----
+int ledPin;
+
+void setup() {
+  ledPin = 10;
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() { 
+  digitalWrite(ledPin, 1);
+  delay(1000);
+  digitalWrite(ledPin, 0);
+  delay(1000);
+}
+----
+
  - Wiederholen was setup() und loop() sind
  - Erklaeren was wie man einen Pin ansteuert (pinMode & digitalWrite) und was eine Variable ist.
 
@@ -25,9 +40,23 @@ Board: LED mit Vorwiderstand und ein Taster angeschlossen an den Arduino
 
 image::/img/led-vorwiderstand-taster_bb.png[Breadboard, LED mit Vorwiderstand und Taster]
 
-  - int inputPin = 10; int outputPin = 11;
-  - void setup() { pinMode(inputPin, INPUT); }
-  - void loop() { int active = digitalRead(inputPin); if (active == HIGH) { digitalWrite(outputPin, HIGH)} }
+[source,cplusplus,linenums]
+----
+int inputPin = 10;
+int outputPin = 11;
+
+void setup() {
+  pinMode(inputPin, INPUT);
+}
+
+void loop() {
+  int active = digitalRead(inputPin);
+  if (active == HIGH) {
+    digitalWrite(outputPin, HIGH);
+  }
+}
+----
+
   - Erklaeren was `if` macht, Vergleichsoperatoren (==, !=)
 
 == Tasten entprellen (theorie & praxis)

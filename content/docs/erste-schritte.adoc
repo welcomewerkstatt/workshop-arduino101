@@ -1,4 +1,5 @@
 = Erste Schritte mit dem Arduino
+:source-highlighter: coderay
 
 == Arduino IDE aufsetzen (praxis)
 
@@ -11,8 +12,18 @@ Board: Nano auf dem Breadboard, angeschlossen an den PC
 
 image::/img/einsames-breadboard_bb.png[Breadboard mit Arduino]
 
- - void setup() { Serial.begin(9600); }
- - void loop() { Serial.write("Hello World!\n"); delay(2000); }
+[source,cplusplus,linenums]
+----
+void setup() { 
+  Serial.begin(9600);
+}
+
+void loop() {
+  Serial.write("Hallo ihr!\n"); 
+  delay(2000);
+}
+----
+
  - erstes Programm, durchsehen das alles funktioniert
  - Serielle Konsole weil der Arduino Nano keine LED hat
  - Grob erklaeren was ein Funktion ist, erwaehnen das es unterschiedliche Datentypen gibt (String, int)
