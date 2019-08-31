@@ -1,4 +1,5 @@
 = Sensoren & Aktuatoren (resistiv)
+:source-highlighter: coderay
 
 == Spannungsteiler (theorie)
 
