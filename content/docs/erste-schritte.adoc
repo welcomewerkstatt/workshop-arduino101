@@ -9,6 +9,8 @@ In die serielle Konsole loggen (praxis)
 
 Board: Nano auf dem Breadboard, angeschlossen an den PC
 
+image::/img/einsames-breadboard_bb.png[Breadboard mit Arduino]
+
  - void setup() { Serial.begin(9600); }
  - void loop() { Serial.write("Hello World!\n"); delay(2000); }
  - erstes Programm, durchsehen das alles funktioniert
