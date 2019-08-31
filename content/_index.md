@@ -3,4 +3,6 @@ title: Introduction
 type: docs
 ---
 
-Startseite fuer den Welcome Werkstatt Arduino Workshop.
+Wilkommen beim Welcome Werkstatt Arduino Workshop!
+
+![Arduino, Breadboard und Servo](/static/img/arduino-cover.png "Arduino Uno mit Zubehör")
