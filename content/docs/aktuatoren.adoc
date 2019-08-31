@@ -10,6 +10,8 @@
 
 Board: Potentiometer und Buzzer angeschlossen an den Arduino
 
+image::/img/poti-buzzer_bb.png[Breadboard, Poti und Buzzer]
+
 [source,cplusplus,linenums]
 ----
 int buzzPin = 10;
