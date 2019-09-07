@@ -14,6 +14,12 @@ Board: LED mit Vorwiderstand angeschlossen an den Arduino
 
 image::/img/led-vorwiderstand_bb.png[Breadboard, LED und Vorwiderstand]
 
+Wenn das ganze läuft, dann kann es so aussehen.
+
+image::/photos/grueneled.jpg[Arduino mit grüner LED]
+
+video::358495119[vimeo]
+
 [source,cplusplus,linenums]
 ----
 int ledPin;
@@ -47,16 +53,24 @@ int outputPin = 11;
 
 void setup() {
   pinMode(inputPin, INPUT);
+  pinMode(outputPin, OUTPUT);
 }
 
 void loop() {
   int active = digitalRead(inputPin);
-  if (active == HIGH) {
+  if (active == LOW) {
     digitalWrite(outputPin, HIGH);
+  } else {
+  	digitalWrite(outputPin, LOW);
   }
 }
 ----
 
+Wenn das ganze läuft, kann es z.B. so wie auf diesem Bild aussehen.
+
+image::/photos/ledtaster.jpg[Arduino mit LED und Taster]
+
+  - vordefinierte Konstanten
   - Erklaeren was `if` macht, Vergleichsoperatoren (==, !=)
 
 == Tasten entprellen (theorie & praxis)
