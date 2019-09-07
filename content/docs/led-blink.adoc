@@ -37,6 +37,7 @@ void loop() {
 }
 ----
 
+ - vordefinierte Konstanten
  - Wiederholen was setup() und loop() sind
  - Erklaeren was wie man einen Pin ansteuert (pinMode & digitalWrite) und was eine Variable ist.
 
@@ -70,7 +71,6 @@ Wenn das ganze läuft, kann es z.B. so wie auf diesem Bild aussehen.
 
 image::/photos/ledtaster.jpg[Arduino mit LED und Taster]
 
-  - vordefinierte Konstanten
   - Erklaeren was `if` macht, Vergleichsoperatoren (==, !=)
 
 == Tasten entprellen (theorie & praxis)
@@ -81,3 +81,10 @@ Board mit Taster und LED mit Vorwiderstand
   - Wie entprelle ich tasten mit dem Arduino
   - erklaeren wie man eine funktion schreibt
   - val1 = digitalRead(buttonPin); delay(20); val2 = digitalRead(buttonPin); if (val1 == val2) { finalVal = val1; }
+
+== Experimentier-Vorschläge
+
+  - Die LED schnell blinken lassen, wenn der Taster gedrückt wird
+  - Die LED anschalten bei einem Tastendruck, und ausschalten bei dem Nächsten
+  - Den Pull-Down Widerstand aus dem zweiten Versuch entfernen und statt Taster direkt per Stecker
+    0V oder 5V anlegen; beobachten, was mit der LED passiert (verbliebene Ladung)
