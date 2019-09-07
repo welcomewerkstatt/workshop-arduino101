@@ -10,16 +10,18 @@ In die serielle Konsole loggen (praxis)
 
 Bevor der Arduino zusammen gelötet ist, sieht das ganze wie auf dem Bild unten aus.
 
-image::/photos/arduinoteile.jpg[Arduino in Einzelteilen]
+image::/photos/arduinoteile.jpg[Arduino in Einzelteilen, 800]
 
 Wir löten für euch den Arduino zusammen.
 Wenn man den Arduino zum ersten Mal auf das Steckerbrett steckt und anschließt, dann startet das Standard-Programm und die LED auf dem Arduino blinkt.
+
+image::/photos/arduinoboard.jpg[Arduino auf dem Board, 800]
 
 video::358495756[vimeo]
 
 Board: Nano auf dem Breadboard, angeschlossen an den PC
 
-image::/img/einsames-breadboard_bb.png[Breadboard mit Arduino]
+image::/img/einsames-breadboard_bb.png[Breadboard mit Arduino, 800]
 
 [source,cplusplus,linenums]
 ----

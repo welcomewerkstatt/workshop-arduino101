@@ -14,10 +14,11 @@ Wir rechnen mit ca. 15 € Kosten fuer Material. Hier ist die Liste aller Teile:
 
  - Arduino Nano v3
  - Breadboard Mittel
- - Jumper wire
+ - Drahtbrücken
  - Taster
  - Piezo Buzzer
- - LED 30mA
+ - LED 30mA, 3V; gruen
  - Poti 10k Ohm
  - Servo klein
- - Widerstand 330 Ohm
+ - Widerstand 100 Ohm, Vorwiderstand LED
+ - Widerstand 27k Ohm, pull-down
