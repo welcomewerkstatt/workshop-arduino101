@@ -13,6 +13,7 @@ Wir hoffen das wir den Kurs in Zukunft regelmässig veranstalten können.
 Wir rechnen mit ca. 15 € Kosten fuer Material. Hier ist die Liste aller Teile:
 
  - Arduino Nano v3
+ - Mini-USB Kabel (Achtung: kein Micro)
  - Breadboard Mittel
  - Drahtbrücken
  - Taster
